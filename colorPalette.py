@@ -5,8 +5,5 @@ def returnRGB(colors):
 
 
 
-
-#comparing colors
-#convert to HSL?
-#compare in stages? is red similar, is green similar, is blue similar
-#break colors down into groupings, compare within those?
+def nearestColour(subjects, query):
+    return min(subjects, key = lambda subject: sum((s - q) ** 2 for s, q in zip( subject, query ) ) )
