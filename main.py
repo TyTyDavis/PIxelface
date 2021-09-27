@@ -15,7 +15,7 @@ img = Image.open(os.path.join(ROOT_DIR, "Portrait2.png"))
 #img = img.rotate(-90, expand=True)
 #Change image size
 img = resize.pixelResize(img, 150, 200)
-colors, pixelCount = extcolors.extract_from_image(img,  tolerance=20,limit=48)
+colors, pixelCount = extcolors.extract_from_image(img,  tolerance=30,limit=10)
 
 img.save(os.path.join(ROOT_DIR, "Portrait2Small.png"))
 

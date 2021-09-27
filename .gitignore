@@ -1,8 +1,5 @@
-env/
-newPortrait.png
-Portrait.jpg
-.png
-.jpg
-Portrait2.png
-Portrait2Small.png
-*_pycache_\
+**/env
+*.jpeg
+*.png
+*.jpg
+*.pyc
